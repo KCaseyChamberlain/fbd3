@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <title>FBD3</title>
+    <style>
+        h2,
+        p {
+            margin: 10px 0;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 
 <body class="indigo">
@@ -42,6 +51,24 @@
         </div>
     </div>
 
+    <script> src = "https://:www.gstatic.com/firebasejs/5.5.2/firebase-app.js"</script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebaseio.com"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_gHLb3Zu002fd80CyxBhY250k2JtS2_Q",
+            authDomain: "udemy-d3-firebase-750d8.firebaseapp.com",
+            projectId: "udemy-d3-firebase-750d8",
+            storageBucket: "udemy-d3-firebase-750d8.appspot.com",
+            messagingSenderId: "1040987056947",
+            appId: "1:1040987056947:web:6d09841f52443a67d16c46",
+            measurementId: "G-LRT9DSLJTH"
+        };
+
+        firebase.initializeApp(config);
+        const db = firebase.firestorm();
+        const settings = { timestamptsInSnapshots: true };
+        db.settings(settings);
+    </script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="index.js"></script>
