@@ -42,7 +42,7 @@
                         <button class="btn-large pink white-text">Add Item</button>
                     </div>
                     <div class="input-field center">
-                        <p class="red-text">test</p>
+                        <p class="red-text" id="error"></p>
                     </div>
                 </div>
             </form>
@@ -51,24 +51,24 @@
         </div>
     </div>
 
-    <script> src = "https://:www.gstatic.com/firebasejs/5.5.2/firebase-app.js"</script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebaseio.com"></script>
+    <script src = "https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+    <script src = "https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
     <script>
-        const firebaseConfig = {
-            apiKey: "AIzaSyC_gHLb3Zu002fd80CyxBhY250k2JtS2_Q",
-            authDomain: "udemy-d3-firebase-750d8.firebaseapp.com",
-            projectId: "udemy-d3-firebase-750d8",
-            storageBucket: "udemy-d3-firebase-750d8.appspot.com",
-            messagingSenderId: "1040987056947",
-            appId: "1:1040987056947:web:6d09841f52443a67d16c46",
-            measurementId: "G-LRT9DSLJTH"
+        const config = {
+            apiKey: "AIzaSyAegSuzLSXJ0Dj8rXnMk1QmTm-1wK35l5M",
+            authDomain: "fbd3-8c8b8.firebaseapp.com",
+            projectId: "fbd3-8c8b8",
+            storageBucket: "fbd3-8c8b8.appspot.com",
+            messagingSenderId: "869244057682",
+            appId: "1:869244057682:web:969784b97fce779265478b",
+            measurementId: "G-XJ9N4CPXEB"
         };
-
         firebase.initializeApp(config);
-        const db = firebase.firestorm();
+        const db = firebase.firestore();
         const settings = { timestamptsInSnapshots: true };
         db.settings(settings);
     </script>
+
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="index.js"></script>
